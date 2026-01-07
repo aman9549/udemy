@@ -13,7 +13,7 @@ const Footer = () => {
       </div>
     <div className="flex items-center px-10 py-6 font-sans border-b-white border-b text-white justify-between ">
       <div className="">
-        <h2 className="text-md font-semibold">Top companies choose <span className="text-primary-100">Udemy Business</span> to build in-demand career skills.</h2>
+        <h2 className="text-md font-semibold">Top companies choose <span className="text-primary-300">Udemy Business</span> to build in-demand career skills.</h2>
               </div>
 
               <div className="flex gap-2">
@@ -123,6 +123,9 @@ const Footer = () => {
 
       </div>
 
+      </div>
+      <div className="">
+        
       </div>
     </>
   )
