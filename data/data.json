@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1",
+    "category": "Development",
+    "image": "/imgi_21_4390930_5cdc_13.jpg",
+    "title": "Android App Development with Kotlin",
+    "slug": "android-kotlin",
+    "instructor": "Oak Academy",
+    "rating": 3.4,
+    "reviews": "2,157",
+    "currentPrice": "₹399",
+    "originalPrice": "₹3,419",
+    "badgeText": "Premium"
+  },
+  {
+    "id": "2",
+    "category": "Development",
+    "image": "/imgi_22_1436092_2024_4.jpg",
+    "title": "The Complete 2024 Web Development Bootcamp",
+    "slug": "web-bootcamp",
+    "instructor": "Dr. Angela Yu",
+    "rating": 2.8,
+    "reviews": "312,450",
+    "currentPrice": "₹499",
+    "originalPrice": "₹3,999",
+    "badgeText": "Bestseller"
+  },
+  {
+    "id": "3",
+    "category": "Development",
+    "image": "/imgi_23_2835200_53a3_11.jpg",
+    "title": "React - The Complete Guide 2024",
+    "slug": "react-guide",
+    "instructor": "Maximilian Schwarzmüller",
+    "rating": 4.7,
+    "reviews": "189,000",
+    "currentPrice": "₹449",
+    "originalPrice": "₹3,499",
+    "badgeText": "Premium"
+  },
+  {
+    "id": "4",
+    "category": "Development",
+    "image": "/imgi_31_4727804_18e3_9.jpg",
+    "title": "imgi_24_6132383_e4cc.jpg",
+    "slug": "js-expert",
+    "instructor": "Jonas Schmedtmann",
+    "rating": 4.7,
+    "reviews": "175,800",
+    "currentPrice": "₹399",
+    "originalPrice": "₹3,499",
+    "badgeText": "Premium"
+  },
+  {
+    "id": "5",
+    "category": "Development",
+    "image": "/imgi_29_4798902_83c2_3.jpg",
+    "title": "The Complete Node.js Developer Course",
+    "slug": "node-js",
+    "instructor": "Andrew Mead",
+    "rating": 5,
+    "reviews": "71,500",
+    "currentPrice": "₹449",
+    "originalPrice": "₹3,499",
+    "badgeText": "Premium"
+  }
+]

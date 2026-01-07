@@ -1,26 +1,125 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Dimensions & Sizes */
+  --text-course-body: 13px;
+  --text-course-heading: 23px;
+  --text-icon-body: 24px;
+  --width-size: 600px;
+
+  /* Fonts */
+  /* This maps the Next.js variable to Tailwind's default sans stack */
+  --font-sans: var(--font-noto-sans), ui-sans-serif, system-ui;
+  /* Custom utility for Vazirmatn: use via className="font-vazir" */
+  --font-vazir: var(--font-vazirmatn);
+
+  /* Base Colors */
+  --color-white: oklch(1 0 0);
+  --color-black: #000000;
+  --color-nav-text: oklch(29.74% 0.0362 281.74deg);
+
+  /* Neutral / Surface */
+  --color-surface-1: oklch(0.98 0 0);
+  --color-surface-2: oklch(0.94 0.01 280.47);
+  --color-surface-2-muted: oklch(0.94 0.01 280.47 / 0.8);
+  --color-surface-3: oklch(0.87 0.02 282.72);
+  --color-surface-4: oklch(0.79 0.03 281.19);
+  --color-surface-5: oklch(0.67 0.04 279.77);
+
+  /* Primary */
+  --color-primary-100: oklch(0.68 0.2 301.5 / 0.3);
+  --color-primary-300: oklch(0.58 0.26 306.65);
+  --color-primary-400: oklch(0.48 0.23 293.93);
+  --color-primary-500: oklch(0.43 0.22 285.34);
+  --color-primary-700: oklch(0.3 0.04 281.74);
+  --color-primary-800: oklch(0.26 0.03 278.04);
+  --color-primary-900: oklch(0.2 0.01 285.09);
+  --color-primary-900-muted: oklch(0.2 0.01 285.09 / 0.5);
+
+  /* Accent Colors */
+  --color-accent-blue: #00b6ff;
+  --color-accent-green: #24cb71;
+  --color-accent-orange: #ff7237;
+  --color-accent-yellow: #fbbc05;
+  --color-accent-red: #ff3737;
+  --color-accent-purple: #874fff;
+
+  /* Status */
+  --color-success: #34a853;
+  --color-warning: #fbbc04;
+  --color-error: #ea4335;
+  --color-info: #4285f4;
+
+  /* Brand */
+  --color-google-blue: #1967d2;
+  --color-microsoft-blue: #0072c6;
+  --color-linkedin-blue: #1976d2;
+
+  /* Dark */
+  --color-dark-1: #180a3d;
+  --color-dark-2: #595c73;
+  --color-dark-3: #9194ac;
+
+
+  --font-weight-light: 400;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Custom Scale for your specific button needs */
+  --spacing-nav-x: 0.75rem; /* px-3 */
+  --spacing-nav-y: 0.5rem;  /* py-2 */
+  --radius-nav-md: 0.375rem; /* rounded-md */
+
+  /* Colors used in the class */
+ 
+
+  --width-card: 450px;
+
+  --color-star:oklch(62.76% 0.1418 61.45deg);
+  --color-rating:oklch(46.68% 0.1161 51.53deg);;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Custom utility class created using theme variables */
+/* Creating the custom utility class */
+@utility nav-item-style {
+  padding-inline: var(--spacing-nav-x);
+  padding-block: var(--spacing-nav-y);
+  border-radius: var(--radius-nav-md);
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background-color: var(--color-primary-100);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility heading {
+  color: var(--color-nav-text);
+  font-size: var(--text-icon-body);
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-bold); /* Since you wanted it thin */
+  transition: color 0.2s ease;
+}
+
+@utility btnpadding{
+  padding-inline: var(--spacing-nav-x);
+  padding-block: var(--spacing-nav-y);
+  border-radius: var(--radius-nav-md);
+  transition: all 0.2s ease;
+
+ &:hover {
+    opacity: 0.8; /* Dulls the button slightly */
+    cursor: pointer;
+  }
+}
+
+@utility courseheading{
+
+   color: var(--color-nav-text);
+  font-size: var(--text-course-heading);
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-bold)
+
 }
