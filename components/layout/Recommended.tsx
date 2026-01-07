@@ -1,8 +1,7 @@
-import RecButton from "./RecButton"
+import RecButton from "./RecButton";
 
 const Recommended = () => {
-
-    const categories = [
+  const categories = [
     "Android Development",
     "Kotlin Multiplatform",
     "Kotlin",
@@ -12,33 +11,22 @@ const Recommended = () => {
     "Android Studio",
     "Android Jetpack",
     "Android Game Development",
-    "React JS"
+    "React JS",
   ];
 
   return (
     <>
+      <div className="space-y-4">
+        <h1 className="heading text-2xl">Topics recommended for you</h1>
 
-    <div className="space-y-4">
-
-    <h1 className="heading text-2xl">Topics recommended for you</h1>
-
-    <div className="grid grid-cols-5 gap-3">
-       
-       {
-        categories.map((item)=>{
-                return(
-                    
-                    <RecButton key={item} label={item} />
-                    
-                )
-        })
-       }
-    </div>
-        
-    </div>
-       
+        <div className="grid grid-cols-5 gap-3">
+          {categories.map((item) => {
+            return <RecButton key={item} label={item} />;
+          })}
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Recommended
+export default Recommended;

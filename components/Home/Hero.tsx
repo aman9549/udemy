@@ -4,7 +4,7 @@ import Link from "next/link"
 const Hero = () => {
   return (
     <>
-    <div className="py-11 grid gap-5">
+    <div className="pb-7 grid gap-5">
     <div className="flex gap-7 items-center">
         <Image src={'/profile.avif'} className="rounded-full" width={70} height={70} alt="User" />
         <div className="">
