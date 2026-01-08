@@ -5,26 +5,34 @@ const Footer = () => {
   return (
     <>
     <div className="bg-footer-bg">
-    <div className="flex items-center px-10 py-6 font-sans border-b-white border-b text-white justify-between ">
-      <div className="">
-        <h2 className="text-md font-semibold">Teach the world online</h2>
-        <p className="text-md font-extralight">Create an online video course, reach students across the globe, and earn money</p>
-      </div>
-      <button className="btnpadding border border-white">Teach on Udemy</button>
-      </div>
-    <div className="flex items-center px-10 py-6 font-sans border-b-white border-b text-white justify-between ">
-      <div className="">
-        <h2 className="text-md font-semibold">Top companies choose <span className="text-primary-300">Udemy Business</span> to build in-demand career skills.</h2>
-              </div>
-
-              <div className="flex gap-2">
-
-          <Image src={'/imgi_72_nasdaq-light.svg'} width={90} className="" height={100} alt="img" />
-          <Image src={'/imgi_73_volkswagen-light.svg'} width={50} className="" height={100} alt="img" />
-          <Image src={'/imgi_74_netapp-light.svg'} width={90} className="" height={100} alt="img" />
-          <Image src={'/imgi_75_eventbrite-light.svg'} width={90} className="" height={100} alt="img" />
+   {/* Section 1: Teach the world */}
+<div className="flex flex-col md:flex-row items-center px-6 md:px-10 py-8 font-sans border-b border-b-white/20 text-white justify-between gap-6">
+  <div className="text-center md:text-left">
+    <h2 className="text-lg font-semibold">Teach the world online</h2>
+    <p className="text-sm md:text-md font-extralight max-w-2xl">
+      Create an online video course, reach students across the globe, and earn money
+    </p>
+  </div>
+  <button className="btnpadding border border-white whitespace-nowrap w-full md:w-auto">
+    Teach on Udemy
+  </button>
 </div>
-      </div>
+
+{/* Section 2: Companies Bar */}
+<div className="flex flex-col lg:flex-row items-center px-6 md:px-10 py-8 font-sans border-b border-b-white/20 text-white justify-between gap-8">
+  <div className="text-center lg:text-left">
+    <h2 className="text-md font-semibold">
+      Top companies choose <span className="text-primary-300">Udemy Business</span> to build in-demand career skills.
+    </h2>
+  </div>
+
+  <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+    <Image src={'/imgi_72_nasdaq-light.svg'} width={90} height={30} alt="nasdaq" className="h-auto" />
+    <Image src={'/imgi_73_volkswagen-light.svg'} width={50} height={30} alt="volkswagen" className="h-auto" />
+    <Image src={'/imgi_74_netapp-light.svg'} width={90} height={30} alt="netapp" className="h-auto" />
+    <Image src={'/imgi_75_eventbrite-light.svg'} width={90} height={30} alt="eventbrite" className="h-auto" />
+  </div>
+</div>
 
       <div className="px-10 py-6 space-y-4">
 
@@ -168,22 +176,30 @@ const Footer = () => {
   </div>
 </div>
         
-        <div className="px-10 py-6 text-white flex justify-between">
-          <div className="flex gap-5 items-center">
-          <Image  src="/imgi_76_logo-udemy-inverted.svg" 
-            width={91} 
-            height={34} 
-            alt="Logo" />
-            <p>&copy;2026 Udemy, Inc.</p>
-            </div>
-            <div className="">
-              <p>Cookie setting</p>
-            </div>
-            <div className="flex gap-0.5 items-center">
-              <CiGlobe className="text-xl"/>
-              <p>English</p>
-            </div>
-        </div>
+      <div className="px-6 md:px-10 py-8 text-white flex flex-col md:flex-row justify-between items-center gap-6">
+  {/* Left side: Logo and Copyright */}
+  <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 items-center">
+    <Image 
+      src="/imgi_76_logo-udemy-inverted.svg" 
+      width={91} 
+      height={34} 
+      alt="Logo" 
+    />
+    <p className="text-sm md:text-base">&copy; 2026 Udemy, Inc.</p>
+  </div>
+
+  {/* Right side: Links and Language */}
+  <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+    <div className="cursor-pointer hover:underline">
+      <p className="text-sm md:text-base">Cookie setting</p>
+    </div>
+    
+    <div className="flex gap-2 items-center cursor-pointer hover:underline">
+      <CiGlobe className="text-xl"/>
+      <p className="text-sm md:text-base">English</p>
+    </div>
+  </div>
+</div>
       </div>
     </>
   )

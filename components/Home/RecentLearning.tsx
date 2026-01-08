@@ -10,19 +10,33 @@ const RecentLearning = () => {
         <h1 className="text-3xl heading">Let's start learning</h1>
         <Link href={''} className="nav-item-style text-primary-500 underline">My learing</Link>
     </div>
-    <div className="flex justify-between">
-    <RecentLearningPath />
-    <RecentLearningPath />
-    <RecentLearningPath />
-    </div>
+   <div className="flex flex-col md:flex-row justify-between gap-6">
+  <RecentLearningPath />
+  <RecentLearningPath />
+  <RecentLearningPath />
+</div>
 
-    <div className="flex bg-black justify-between items-center rounded-xl p-5">
-        <p className="text-white font-sans">Training 2 or more people?Get your team access to Udemy's top 30,000+ courses</p>
-        <div className="flex gap-2">
-            <Link href={''} className="btnpadding bg-white text-black ">Get Udemy Business</Link>
-            <button className="btnpadding text-white border-2">Dismiss</button>
-        </div>
+   <div className="flex flex-col md:flex-row bg-black justify-between items-center rounded-xl p-5 gap-4">
+    {/* Text: Centers on mobile, left-aligned on desktop */}
+    <p className="text-white font-sans text-center md:text-left text-sm md:text-base">
+        Training 2 or more people? Get your team access to Udemy's top 30,000+ courses
+    </p>
+    
+    {/* Buttons: Stacked or full-width on mobile */}
+    <div className="flex flex-col sm:flex-row gap-2 w-full md:w-auto">
+        <Link 
+            href={''} 
+            className="btnpadding bg-white text-black text-center whitespace-nowrap"
+        >
+            Get Udemy Business
+        </Link>
+        <button 
+            className="btnpadding text-white border-2 text-center"
+        >
+            Dismiss
+        </button>
     </div>
+</div>
     </div>
    
     </>

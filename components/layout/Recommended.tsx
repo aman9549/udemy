@@ -16,15 +16,15 @@ const Recommended = () => {
 
   return (
     <>
-      <div className="space-y-4">
-        <h1 className="heading text-2xl">Topics recommended for you</h1>
+     <div className="space-y-4">
+  <h1 className="heading text-xl md:text-2xl font-bold">Topics recommended for you</h1>
 
-        <div className="grid grid-cols-5 gap-3">
-          {categories.map((item) => {
-            return <RecButton key={item} label={item} />;
-          })}
-        </div>
-      </div>
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+    {categories.map((item) => (
+      <RecButton key={item} label={item} />
+    ))}
+  </div>
+</div>
     </>
   );
 };
