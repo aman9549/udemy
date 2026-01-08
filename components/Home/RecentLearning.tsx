@@ -6,10 +6,17 @@ const RecentLearning = () => {
     <>
     <div className=" space-y-10">
 
- <div className="flex items-center justify-between">
-        <h1 className="text-3xl heading">Let's start learning</h1>
-        <Link href={''} className="nav-item-style text-primary-500 underline">My learing</Link>
-    </div>
+<div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-4">
+    <h1 className="text-2xl md:text-3xl font-bold heading">
+      Let's start learning
+    </h1>
+    <Link 
+      href={''} 
+      className="nav-item-style text-primary-500 underline text-sm md:text-base whitespace-nowrap"
+    >
+      My learning
+    </Link>
+</div>
    <div className="flex flex-col md:flex-row justify-between gap-6">
   <RecentLearningPath />
   <RecentLearningPath />
