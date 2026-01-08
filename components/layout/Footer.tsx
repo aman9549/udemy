@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { CiGlobe } from "react-icons/ci";
 
 const Footer = () => {
   return (
@@ -124,8 +125,65 @@ const Footer = () => {
       </div>
 
       </div>
-      <div className="">
+      <div className="bg-footer-bottom">
+
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-10 py-6 bg-footer-bottom text-white border-b-white border-b ">
+  <div>
+    <h3 className="font-bold mb-3">About</h3>
+    <ul className="space-y-1 text-sm font-extralight">
+      <li>About us</li>
+      <li>Careers</li>
+      <li>Contact us</li>
+      <li>Blog</li>
+      <li>Investors</li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 className="font-bold mb-3">Discover Udemy</h3>
+    <ul className="space-y-1 text-sm font-extralight">
+      <li>Get the app</li>
+      <li>Teach on Udemy</li>
+      <li>Plans and Pricing</li>
+      <li>Affiliate</li>
+      <li>Help and Support</li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 className="font-bold mb-3">Udemy for Business</h3>
+    <ul className="space-y-1 text-sm font-extralight">
+      <li>Udemy Business</li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 className="font-bold mb-3">Legal & Accessibility</h3>
+    <ul className="space-y-1 text-sm font-extralight">
+      <li>Accessibility statement</li>
+      <li>Privacy policy</li>
+      <li>Sitemap</li>
+      <li>Terms</li>
+    </ul>
+  </div>
+</div>
         
+        <div className="px-10 py-6 text-white flex justify-between">
+          <div className="flex gap-5 items-center">
+          <Image  src="/imgi_76_logo-udemy-inverted.svg" 
+            width={91} 
+            height={34} 
+            alt="Logo" />
+            <p>&copy;2026 Udemy, Inc.</p>
+            </div>
+            <div className="">
+              <p>Cookie setting</p>
+            </div>
+            <div className="flex gap-0.5 items-center">
+              <CiGlobe className="text-xl"/>
+              <p>English</p>
+            </div>
+        </div>
       </div>
     </>
   )
