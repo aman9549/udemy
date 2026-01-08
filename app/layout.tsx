@@ -31,7 +31,9 @@ export default function RootLayout({
     <html lang="en" className={`${notoSans.variable} ${vazirmatn.variable}`}>
       <body className="antialiased font-sans ">
         <Navbar />
-        <div className="px-24 py-8">
+        <div className="px-6 py-4 md:px-12 md:py-6 lg:px-24 lg:py-8">
+  {/* Content */}
+
         {children}
          </div>
         <Footer />
