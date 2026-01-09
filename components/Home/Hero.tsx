@@ -1,21 +1,7 @@
-"use client"
 import Image from "next/image"
 import Link from "next/link"
-import Slider from "react-slick";
 
 const Hero = () => {
-
-   var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    cssEase: "linear"
-  };
-
   return (
     <div className="grid gap-5 pb-7 px-4 md:px-0">
       {/* --- User Header Section --- */}
@@ -43,11 +29,6 @@ const Hero = () => {
 
       {/* --- Hero Banner Section --- */}
       <div className="relative w-full overflow-hidden rounded-lg md:rounded-none">
-
-            <Slider {...settings}>
-
-              <div className="">
-
         {/* Hero Image */}
         <Image 
           src={'/imgi_hero.jpg'} 
@@ -78,140 +59,6 @@ const Hero = () => {
             Get the skills you need for your 2026 dreams with courses from ₹399. Sale ends January 13.
           </p>
         </div>
-        </div>
-              <div className="">
-
-        {/* Hero Image */}
-        <Image 
-          src={'/imgi_hero.jpg'} 
-          width={1360} 
-          height={400} 
-          alt="hero" 
-          className="w-full h-[300px] md:h-auto object-cover"
-          priority
-        />
-
-        {/* Floating Card */}
-        {/* Mobile: Below image or centered | Desktop: Absolute top-left */}
-        <div className="
-          relative md:absolute 
-          top-0 md:top-12 lg:top-17 
-          left-0 md:left-12 lg:left-17 
-          bg-white 
-          w-full md:w-[450px] 
-          p-6 md:p-8 
-          shadow-lg md:shadow-md 
-          space-y-3 
-          leading-relaxed
-        ">
-          <h1 className="courseheading text-2xl lg:text-3xl leading-tight">
-            Big ambitions? Meet big savings.
-          </h1>
-          <p className="text-nav-text font-sans font-light text-sm md:text-base">
-            Get the skills you need for your 2026 dreams with courses from ₹399. Sale ends January 13.
-          </p>
-        </div>
-        </div>
-              <div className="">
-
-        {/* Hero Image */}
-        <Image 
-          src={'/imgi_hero.jpg'} 
-          width={1360} 
-          height={400} 
-          alt="hero" 
-          className="w-full h-[300px] md:h-auto object-cover"
-          priority
-        />
-
-        {/* Floating Card */}
-        {/* Mobile: Below image or centered | Desktop: Absolute top-left */}
-        <div className="
-          relative md:absolute 
-          top-0 md:top-12 lg:top-17 
-          left-0 md:left-12 lg:left-17 
-          bg-white 
-          w-full md:w-[450px] 
-          p-6 md:p-8 
-          shadow-lg md:shadow-md 
-          space-y-3 
-          leading-relaxed
-        ">
-          <h1 className="courseheading text-2xl lg:text-3xl leading-tight">
-            Big ambitions? Meet big savings.
-          </h1>
-          <p className="text-nav-text font-sans font-light text-sm md:text-base">
-            Get the skills you need for your 2026 dreams with courses from ₹399. Sale ends January 13.
-          </p>
-        </div>
-        </div>
-              <div className="">
-
-        {/* Hero Image */}
-        <Image 
-          src={'/imgi_hero.jpg'} 
-          width={1360} 
-          height={400} 
-          alt="hero" 
-          className="w-full h-[300px] md:h-auto object-cover"
-          priority
-        />
-
-        {/* Floating Card */}
-        {/* Mobile: Below image or centered | Desktop: Absolute top-left */}
-        <div className="
-          relative md:absolute 
-          top-0 md:top-12 lg:top-17 
-          left-0 md:left-12 lg:left-17 
-          bg-white 
-          w-full md:w-[450px] 
-          p-6 md:p-8 
-          shadow-lg md:shadow-md 
-          space-y-3 
-          leading-relaxed
-        ">
-          <h1 className="courseheading text-2xl lg:text-3xl leading-tight">
-            Big ambitions? Meet big savings.
-          </h1>
-          <p className="text-nav-text font-sans font-light text-sm md:text-base">
-            Get the skills you need for your 2026 dreams with courses from ₹399. Sale ends January 13.
-          </p>
-        </div>
-        </div>
-              <div className="">
-
-        {/* Hero Image */}
-        <Image 
-          src={'/imgi_hero.jpg'} 
-          width={1360} 
-          height={400} 
-          alt="hero" 
-          className="w-full h-[300px] md:h-auto object-cover"
-          priority
-        />
-
-        {/* Floating Card */}
-        {/* Mobile: Below image or centered | Desktop: Absolute top-left */}
-        <div className="
-          relative md:absolute 
-          top-0 md:top-12 lg:top-17 
-          left-0 md:left-12 lg:left-17 
-          bg-white 
-          w-full md:w-[450px] 
-          p-6 md:p-8 
-          shadow-lg md:shadow-md 
-          space-y-3 
-          leading-relaxed
-        ">
-          <h1 className="courseheading text-2xl lg:text-3xl leading-tight">
-            Big ambitions? Meet big savings.
-          </h1>
-          <p className="text-nav-text font-sans font-light text-sm md:text-base">
-            Get the skills you need for your 2026 dreams with courses from ₹399. Sale ends January 13.
-          </p>
-        </div>
-        </div>
-        </Slider>
       </div>
     </div>
   )
