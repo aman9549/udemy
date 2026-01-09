@@ -14,7 +14,7 @@ const CoursesSection = ({ title = "Recommended for you" }: CoursesSectionProps) 
 
   return (
     <>
-    <h1 className="courseheading text-2xl md:text-4xl font-bold mb-6">{title}</h1>
+    <h1 className="courseheading text-2xl md:text-2xl font-bold mb-6">{title}</h1>
 
 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
   {data.map((item) => (
