@@ -3,6 +3,8 @@ import { Noto_Sans, Vazirmatn } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const notoSans = Noto_Sans({
   variable: "--font-noto-sans",
